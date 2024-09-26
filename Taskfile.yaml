@@ -43,6 +43,6 @@ tasks:
       - tailwind.config.js
       - src/styles/global.css
     cmds:
-      - npx tailwindcss build -i ./src/styles/global.css -o ./src/static/style.css
+      - bunx tailwindcss build -i ./src/styles/global.css -o ./src/static/style.css
       - go run github.com/a-h/templ/cmd/templ@latest generate
       - go generate ./src/...

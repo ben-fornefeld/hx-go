@@ -1,13 +1,18 @@
 package components
 
+import "time"
+import "strconv"
+
 templ Layout(view templ.Component) {
 	<html>
 		@Head()
-		<body class="bg-background text-foreground scrollbar-track-transparent scrollbar-thumb-muted">
-			<div class="flex flex-col min-h-screen w-full max-w-screen">
+		<body class="bg-background text-foreground font-serif font-light scrollbar-track-transparent scrollbar-thumb-muted">
+			<div class="flex flex-col min-h-screen w-screen scrollbar-thin overflow-y-auto">
 				@Header()
-				<main class="flex-grow container mx-auto">
-					@view
+				<main class="flex-grow w-full p-4">
+					<div class="container mx-auto">
+						@view
+					</div>
 				</main>
 				@Footer()
 			</div>
@@ -19,6 +24,9 @@ templ Head() {
 	<head>
 		<meta charset="utf-8"/>
 		<title>Go + Templ + HTMX + Tailwind Template</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com"/>
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet"/>
 		<link href="/static/style.css" rel="stylesheet"/>
 		<script src="https://unpkg.com/htmx.org@1.9.9"></script>
 	</head>
@@ -33,10 +41,10 @@ templ Header() {
 }
 
 templ Footer() {
-	<footer class="w-full p-4 mt-2 bg-muted">
+	<footer class="w-full p-4 bg-muted">
 		<div class="container mx-auto">
 			<aside>
-				<p class="font-mono">Copyright © 2023 - All right reserved.</p>
+				<p>Copyright © { strconv.Itoa(time.Now().Year()) } - All right reserved.</p>
 			</aside>
 		</div>
 	</footer>

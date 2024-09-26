@@ -4,33 +4,34 @@ export const theme = {
   extend: {
     fontFamily: {
       mono: ["Courier Prime", "monospace"],
+      serif: ["Playfair Display", "serif"],
     },
     colors: {
-      background: "var(--c-background)",
-      foreground: "var(--c-foreground)",
+      background: "hsl(var(--c-background))",
+      foreground: "hsl(var(--c-foreground))",
       primary: {
-        DEFAULT: "var(--c-primary)",
-        foreground: "var(--c-primary-foreground)",
+        DEFAULT: "hsl(var(--c-primary))",
+        foreground: "hsl(var(--c-primary-foreground))",
       },
       secondary: {
-        DEFAULT: "var(--c-secondary)",
-        foreground: "var(--c-secondary-foreground)",
+        DEFAULT: "hsl(var(--c-secondary))",
+        foreground: "hsl(var(--c-secondary-foreground))",
       },
       muted: {
-        DEFAULT: "var(--c-muted)",
-        foreground: "var(--c-muted-foreground)",
+        DEFAULT: "hsl(var(--c-muted))",
+        foreground: "hsl(var(--c-muted-foreground))",
       },
       accent: {
-        DEFAULT: "var(--c-accent)",
-        foreground: "var(--c-accent-foreground)",
+        DEFAULT: "hsl(var(--c-accent))",
+        foreground: "hsl(var(--c-accent-foreground))",
       },
       destructive: {
-        DEFAULT: "var(--c-destructive)",
-        foreground: "var(--c-destructive-foreground)",
+        DEFAULT: "hsl(var(--c-destructive))",
+        foreground: "hsl(var(--c-destructive-foreground))",
       },
       ring: {
-        DEFAULT: "var(--c-ring)",
-        foreground: "var(--c-ring-foreground)",
+        DEFAULT: "hsl(var(--c-ring))",
+        foreground: "hsl(var(--c-ring-foreground))",
       },
     },
   },
