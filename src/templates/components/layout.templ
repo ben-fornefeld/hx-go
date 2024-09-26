@@ -1,0 +1,43 @@
+package components
+
+templ Layout(view templ.Component) {
+	<html>
+		@Head()
+		<body class="bg-background text-foreground scrollbar-track-transparent scrollbar-thumb-muted">
+			<div class="flex flex-col min-h-screen w-full max-w-screen">
+				@Header()
+				<main class="flex-grow container mx-auto">
+					@view
+				</main>
+				@Footer()
+			</div>
+		</body>
+	</html>
+}
+
+templ Head() {
+	<head>
+		<meta charset="utf-8"/>
+		<title>Go + Templ + HTMX + Tailwind Template</title>
+		<link href="/static/style.css" rel="stylesheet"/>
+		<script src="https://unpkg.com/htmx.org@1.9.9"></script>
+	</head>
+}
+
+templ Header() {
+	<header class="w-full p-4 bg-muted">
+		<div class="container mx-auto">
+			<h1 class="text-2xl">Go + Templ + HTMX + Tailwind Template</h1>
+		</div>
+	</header>
+}
+
+templ Footer() {
+	<footer class="w-full p-4 mt-2 bg-muted">
+		<div class="container mx-auto">
+			<aside>
+				<p class="font-mono">Copyright © 2023 - All right reserved.</p>
+			</aside>
+		</div>
+	</footer>
+}
