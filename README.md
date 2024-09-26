@@ -1,4 +1,4 @@
-# Go + Templ + HTMX + Tailwind CSS Template
+# Go :: TempL :: HTMX :: Tailwind CSS -- Starter Kit
 
 ## 🚀 Features
 * [Go](https://golang.org/)
