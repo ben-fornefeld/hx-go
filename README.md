@@ -58,7 +58,7 @@ task dev
 ```
 
 ## 📦 Structure
-
+```
 src/
 ├── static/
 │   └── (static files served directly at /static/*)
@@ -66,3 +66,4 @@ src/
 │   └── (reusable Templ components)
 └── views/
     └── (views and routes for views)
+```
