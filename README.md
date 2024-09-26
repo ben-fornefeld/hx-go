@@ -1,6 +1,5 @@
 # Go + Templ + HTMX + Tailwind CSS Template
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/_U7eCH?referralCode=BUOfF1)
 ## 🚀 Features
 * [Go](https://golang.org/)
 * [Echo](https://echo.labstack.com/) - Web framework
