@@ -1,4 +1,4 @@
-# Go :: TempL :: HTMX :: Tailwind CSS -- Starter Kit
+# Go :: TempL :: HTMX :: Tailwind :: Bun -- Starter Kit
 
 ## 🚀 Features
 
