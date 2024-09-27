@@ -3,8 +3,7 @@ export const content = ["./src/templates/**/*.templ", "./src/views/**/*.templ"];
 export const theme = {
   extend: {
     fontFamily: {
-      mono: ["Courier Prime", "monospace"],
-      serif: ["Playfair Display", "serif"],
+      sans: ["Montserrat", "sans-serif"],
     },
     colors: {
       background: "hsl(var(--c-background))",

@@ -36,13 +36,16 @@ tasks:
     generates:
       - src/templates/**/*.go
       - src/views/**/*.go
-      - src/static/**/*.css
+      - src/static/dist/**/*.css
+      - src/static/dist/**/*.js
     sources:
       - src/templates/**/*.templ
       - src/views/**/*.templ
       - tailwind.config.js
-      - src/styles/global.css
+      - src/styles/css/global.css
+      - src/static/js/**/*.js
     cmds:
-      - bunx tailwindcss build -i ./src/styles/global.css -o ./src/static/style.css
+      - bunx tailwindcss build -i ./src/static/css/global.css -o ./src/static/dist/style.css
+      - bun build src/static/js/index.js --outfile=src/static/dist/bundle.js --minify
       - go run github.com/a-h/templ/cmd/templ@latest generate
       - go generate ./src/...

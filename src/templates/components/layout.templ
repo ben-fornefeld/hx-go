@@ -4,13 +4,13 @@ import "time"
 import "strconv"
 
 templ Layout(view templ.Component) {
-	<html>
+	<html lang="en">
 		@Head()
-		<body class="bg-background text-foreground font-serif font-light scrollbar-track-transparent scrollbar-thumb-muted">
-			<div class="flex flex-col min-h-screen w-screen scrollbar-thin overflow-y-auto">
+		<body class="bg-background text-foreground font-light scrollbar-track-transparent scrollbar-thumb-muted">
+			<div class="flex flex-col h-screen w-screen scrollbar-thin overflow-y-auto">
 				@Header()
-				<main class="flex-grow w-full p-4">
-					<div class="container mx-auto">
+				<main class="flex-grow h-full w-full p-4">
+					<div class="container mx-auto h-full flex justify-center items-center">
 						@view
 					</div>
 				</main>
@@ -23,25 +23,26 @@ templ Layout(view templ.Component) {
 templ Head() {
 	<head>
 		<meta charset="utf-8"/>
-		<title>Go + Templ + HTMX + Tailwind Template</title>
+		<title>Go / Templ / HTMX / Tailwind / Bun -- Starter</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com"/>
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet"/>
-		<link href="/static/style.css" rel="stylesheet"/>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"/>
+		<link href="/static/dist/style.css" rel="stylesheet"/>
 		<script src="https://unpkg.com/htmx.org@1.9.9"></script>
+		<script src="/static/dist/bundle.js" defer></script>
 	</head>
 }
 
 templ Header() {
-	<header class="w-full p-4 bg-muted">
+	<header class="w-full p-4 bg-muted/20">
 		<div class="container mx-auto">
-			<h1 class="text-2xl">Go + Templ + HTMX + Tailwind Template</h1>
+			<h1 class="text-2xl">Go / Templ / HTMX / Tailwind / Bun -- Starter</h1>
 		</div>
 	</header>
 }
 
 templ Footer() {
-	<footer class="w-full p-4 bg-muted">
+	<footer class="w-full p-4 bg-muted/20">
 		<div class="container mx-auto">
 			<aside>
 				<p>Copyright © { strconv.Itoa(time.Now().Year()) } - All right reserved.</p>
