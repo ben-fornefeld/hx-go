@@ -9,9 +9,6 @@
 *.dylib
 build
 
-# dist
-src/static/dist
-
 # Test binary, built with `go test -c`
 *.test
 

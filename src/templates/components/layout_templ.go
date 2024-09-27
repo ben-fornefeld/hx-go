@@ -93,7 +93,7 @@ func Head() templ.Component {
 			templ_7745c5c3_Var2 = templ.NopComponent
 		}
 		ctx = templ.ClearChildren(ctx)
-		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("<head><meta charset=\"utf-8\"><title>Go / Templ / HTMX / Tailwind / Bun -- Starter</title><link rel=\"preconnect\" href=\"https://fonts.googleapis.com\"><link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin><link href=\"https://fonts.googleapis.com/css2?family=Montserrat&amp;display=swap\" rel=\"stylesheet\"><link href=\"/static/dist/style.css\" rel=\"stylesheet\"><script src=\"https://unpkg.com/htmx.org@1.9.9\"></script><script src=\"/static/dist/bundle.js\" defer></script></head>")
+		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("<head><meta charset=\"utf-8\"><title>Go / Templ / HTMX / Tailwind / Bun -- Starter</title><link rel=\"preconnect\" href=\"https://fonts.googleapis.com\"><link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin><link href=\"https://fonts.googleapis.com/css2?family=Montserrat&amp;display=swap\" rel=\"stylesheet\"><link href=\"/static/dist/style.css\" rel=\"stylesheet\"><script src=\"/static/dist/htmx.min.js\"></script><script src=\"/static/dist/bundle.js\" defer></script></head>")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
